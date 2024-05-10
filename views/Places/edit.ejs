@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>edit information :</h1>
+    <form  method="POST" action="/place/<%= place4._id %>?_method=PUT">
+        <input placeholder="title" value="<%place4.title%>" name="place[title]" type="text"/>
+        <br><br>
+        <textarea rows="10" cols="35" placeholder="description" name="place[description]" type="text"><%=place4.description %></textarea>
+        <br><br>
+        <input placeholder="price" value="<%=place4.price%>" name="place[price]" type="number"/>
+        <br><br>
+        <input placeholder="location" value="<%=place4.location %>" name="place[location]" type="text"/>
+        <br><br>
+        <input placeholder="country" value="<%=place4.country %>" name="place[country]" type="text"/>
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>creating a new place</h1>
+    <form method="post" action="/place">
+        <input placeholder="title" name="place[title]" type="text"/>
+        <br><br>
+        <input placeholder="description" name="place[description]" type="text"/>
+        <br><br>
+        <input placeholder="price" name="place[price]" type="number"/>
+        <br><br>
+        <input placeholder="location" name="place[location]" type="text"/>
+        <br><br>
+        <input placeholder="country" name="place[country]" type="text"/>
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
